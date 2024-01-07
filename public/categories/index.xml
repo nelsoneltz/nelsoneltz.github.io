@@ -11,14 +11,6 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Jan 2024 13:12:19 -0300</lastBuildDate>
     <atom:link href="https://nelsoneltz.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>teste1</title>
-      <link>https://nelsoneltz.github.io/categories/teste1/</link>
-      <pubDate>Sun, 07 Jan 2024 13:12:19 -0300</pubDate>
-      <guid>https://nelsoneltz.github.io/categories/teste1/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>

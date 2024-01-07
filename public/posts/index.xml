@@ -14,11 +14,12 @@
     <lastBuildDate>Sun, 07 Jan 2024 13:12:19 -0300</lastBuildDate>
     <atom:link href="https://nelsoneltz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>https://nelsoneltz.github.io/posts/my-first-post/</link>
+      <title>First Post</title>
+      <link>https://nelsoneltz.github.io/posts/first_post/</link>
       <pubDate>Sun, 07 Jan 2024 13:12:19 -0300</pubDate>
-      <guid>https://nelsoneltz.github.io/posts/my-first-post/</guid>
-      <description></description>
+      <guid>https://nelsoneltz.github.io/posts/first_post/</guid>
+      <description>Opening Statement ** Bold Text **
+DEU CERTO COROI</description>
     </item>
   </channel>
 </rss>

@@ -2,10 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nelsoneltz.github.io/categories/</loc>
-    <lastmod>2024-01-07T13:12:19-03:00</lastmod>
-  </url><url>
-    <loc>https://nelsoneltz.github.io/posts/my-first-post/</loc>
+    <loc>https://nelsoneltz.github.io/posts/first_post/</loc>
     <lastmod>2024-01-07T13:12:19-03:00</lastmod>
   </url><url>
     <loc>https://nelsoneltz.github.io/</loc>
@@ -17,10 +14,9 @@
     <loc>https://nelsoneltz.github.io/tags/</loc>
     <lastmod>2024-01-07T13:12:19-03:00</lastmod>
   </url><url>
-    <loc>https://nelsoneltz.github.io/categories/teste1/</loc>
-    <lastmod>2024-01-07T13:12:19-03:00</lastmod>
-  </url><url>
     <loc>https://nelsoneltz.github.io/tags/teste2/</loc>
     <lastmod>2024-01-07T13:12:19-03:00</lastmod>
+  </url><url>
+    <loc>https://nelsoneltz.github.io/categories/</loc>
   </url>
 </urlset>

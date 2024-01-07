@@ -23,7 +23,7 @@ params:
   author: Nelson Eltz
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
+  defaultTheme: dark # dark, light
   disableThemeToggle: false
 
   ShowReadingTime: true
@@ -53,7 +53,7 @@ params:
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "Homee"
+    text: "Home"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
@@ -61,7 +61,7 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: Hi, my name is Nelson Eltz!
-    subtitle: "I'm a business analyst working at iFood, building my way to Data Engineering career one pipeline at a time"
+    subtitle: "I'm a Business Analyst working at iFood, building my way into Data Engineering career one pipeline at a time."
     imageUrl: "https://media.licdn.com/dms/image/D4D03AQHYjVnO5z-aMQ/profile-displayphoto-shrink_200_200/0/1693449261958?e=1710374400&v=beta&t=-r26iRARcFGuBDyIzk0nrwo8kEMWRl8vPv1sww2BdMI"
     imageWidth: 200
     imageHeight: 200
@@ -119,10 +119,10 @@ menu:
       name: Posts
       url: /posts/
       weight: 10
-    - identifier: categories
-      name: Categories
-      url: /categories/
-      weight: 20
+    # - identifier: categories
+    #   name: Categories
+    #   url: /categories/
+    #   weight: 20
     - identifier: tags
       name: Tags
       url: /tags/
