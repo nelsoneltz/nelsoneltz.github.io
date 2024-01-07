@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Nelson Analytics</title>
+    <link>https://nelsoneltz.github.io/projects/</link>
+    <description>Recent content in Projects on Nelson Analytics</description>
+    <image>
+      <title>Nelson Analytics</title>
+      <url>https://nelsoneltz.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://nelsoneltz.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://nelsoneltz.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://nelsoneltz.github.io/projects/project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nelsoneltz.github.io/projects/project/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

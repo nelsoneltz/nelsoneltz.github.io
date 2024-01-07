@@ -3,6 +3,7 @@ title: Nelson Analytics
 languageCode: en-us
 paginate: 5
 theme: PaperMod
+enableEmoji: true
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -62,17 +63,18 @@ params:
     enabled: true # needs to be explicitly set
     title: Hi, my name is Nelson Eltz!
     subtitle: "I'm a Business Analyst working at iFood, building my way into Data Engineering career one pipeline at a time."
-    imageUrl: "https://media.licdn.com/dms/image/D4D03AQHYjVnO5z-aMQ/profile-displayphoto-shrink_200_200/0/1693449261958?e=1710374400&v=beta&t=-r26iRARcFGuBDyIzk0nrwo8kEMWRl8vPv1sww2BdMI"
-    imageWidth: 200
-    imageHeight: 200
-    imageTitle: Teste
+    imageUrl: "https://raw.githubusercontent.com/nelsoneltz/nelsoneltz.github.io/main/images_main/perfil.jpg"
+    # imageUrl: "https://media.licdn.com/dms/image/D4D03AQHYjVnO5z-aMQ/profile-displayphoto-shrink_200_200/0/1693449261958?e=1710374400&v=beta&t=-r26iRARcFGuBDyIzk0nrwo8kEMWRl8vPv1sww2BdMI"
+    imageWidth: 300
+    imageHeight: 300
+    imageTitle: This is me!
     buttons:
       - name: Posts
         url: posts
       - name: Tags
         url: tags
-      - name: Categories
-        url: categories
+      - name: Projects
+        url: projects
 
   # home-info mode
   # homeInfoParams:
@@ -115,18 +117,22 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
     - identifier: posts
       name: Posts
       url: /posts/
-      weight: 10
-    # - identifier: categories
-    #   name: Categories
-    #   url: /categories/
-    #   weight: 20
+      weight: 20
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 30
     - identifier: tags
       name: Tags
       url: /tags/
-      weight: 30
+      weight: 40
     # - identifier: linkedin
     #   name: LinkedIn
     #   url: https://www.linkedin.com/in/nelsoneltz/
@@ -141,6 +147,7 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
   highlight:
     noClasses: false
     # anchorLineNos: true
