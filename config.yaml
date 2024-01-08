@@ -43,6 +43,7 @@ params:
   showtoc: false
   tocopen: true
   hideFooter: true
+  disableAnchoredHeadings: true
 
   assets:
     # disableHLJS: true # to disable highlight.js
