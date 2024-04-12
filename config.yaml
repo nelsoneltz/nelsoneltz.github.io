@@ -49,7 +49,7 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
+    favicon: "https://raw.githubusercontent.com/nelsoneltz/nelsoneltz.github.io/main/images_main/icon.jpg"
     favicon16x16: "<link / abs url>"
     favicon32x32: "<link / abs url>"
     apple_touch_icon: "<link / abs url>"
@@ -64,7 +64,7 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: Hi, my name is Nelson Eltz!
-    subtitle: "I'm a Business Analyst working at iFood, building my way into Data Engineering career one pipeline at a time."
+    subtitle: "I'm a Business Intelligence Analyst working at iFood, building my way into Data Engineering career one pipeline at a time."
     imageUrl: "https://raw.githubusercontent.com/nelsoneltz/nelsoneltz.github.io/main/images_main/perfil.jpg"
     # imageUrl: "https://media.licdn.com/dms/image/D4D03AQHYjVnO5z-aMQ/profile-displayphoto-shrink_200_200/0/1693449261958?e=1710374400&v=beta&t=-r26iRARcFGuBDyIzk0nrwo8kEMWRl8vPv1sww2BdMI"
     imageWidth: 300
@@ -73,10 +73,12 @@ params:
     buttons:
       - name: Posts
         url: posts
-      - name: Tags
-        url: tags
       - name: Projects
         url: projects
+      - name: Tags
+        url: tags
+      - name: Resume
+        url: resume
 
   # home-info mode
   # homeInfoParams:
@@ -135,6 +137,10 @@ menu:
       name: Tags
       url: /tags/
       weight: 40
+    - identifier: resume
+      name: Resume
+      url: /resume/
+      weight: 50
     # - identifier: linkedin
     #   name: LinkedIn
     #   url: https://www.linkedin.com/in/nelsoneltz/
