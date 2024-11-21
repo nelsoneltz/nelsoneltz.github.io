@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura Lone Wolf</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #00bcd4;
+        }
+
+        .story {
+            margin: 20px 0;
+            padding: 15px;
+            background: #1e1e1e;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .choices {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .choices button {
+            padding: 10px 15px;
+            background-color: #00bcd4;
+            color: #121212;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .choices button:hover {
+            background-color: #0097a7;
+        }
+
+        .choices button:active {
+            background-color: #00796b;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aventura Lone Wolf</h1>
+    <div id="game" class="story">
+        <p id="story-text">Você está em uma floresta sombria. Há dois caminhos à sua frente. Um parece levar a uma
+            clareira iluminada, e o outro segue em direção a um som de água corrente.</p>
+        <div class="choices">
+            <button onclick="choosePath('clear')">Ir para a clareira</button>
+            <button onclick="choosePath('river')">Seguir o som da água</button>
+        </div>
+    </div>
+    <script>
+        function choosePath(choice) {
+            const storyText = document.getElementById('story-text');
+            const choicesDiv = document.querySelector('.choices');
+
+            if (choice === 'clear') {
+                storyText.innerHTML = "Você chega à clareira e encontra um baú misterioso. Ele está trancado, mas há uma chave dourada pendurada em uma árvore próxima.";
+                choicesDiv.innerHTML = `
+          <button onclick="choosePath('open-chest')">Abrir o baú</button>
+          <button onclick="choosePath('ignore-chest')">Ignorar o baú e continuar</button>
+        `;
+            } else if (choice === 'river') {
+                storyText.innerHTML = "Você segue o som da água e encontra um rio cristalino. Há uma ponte quebrada que parece atravessá-lo.";
+                choicesDiv.innerHTML = `
+          <button onclick="choosePath('cross-bridge')">Tentar atravessar a ponte</button>
+          <button onclick="choosePath('follow-river')">Seguir o rio</button>
+        `;
+            } else if (choice === 'open-chest') {
+                storyText.innerHTML = "Ao abrir o baú, você encontra uma espada mágica! Agora você está mais preparado para enfrentar os perigos da floresta.";
+                choicesDiv.innerHTML = `
+          <button onclick="choosePath('continue')">Continuar sua jornada</button>
+        `;
+            } else if (choice === 'ignore-chest') {
+                storyText.innerHTML = "Você decide ignorar o baú e seguir em frente. No entanto, você sente que perdeu uma oportunidade importante.";
+                choicesDiv.innerHTML = `
+          <button onclick="choosePath('continue')">Continuar sua jornada</button>
+        `;
+            } else if (choice === 'cross-bridge') {
+                storyText.innerHTML = "A ponte se quebra enquanto você tenta atravessá-la. Você cai na água, mas consegue nadar até a margem oposta.";
+                choicesDiv.innerHTML = `
+          <button onclick="choosePath('explore')">Explorar a margem oposta</button>
+        `;
+            } else if (choice === 'follow-river') {
+                storyText.innerHTML = "Você segue o rio e encontra uma pequena vila. Os habitantes parecem amigáveis e oferecem ajuda.";
+                choicesDiv.innerHTML = `
+          <button onclick="choosePath('rest')">Aceitar ajuda e descansar na vila</button>
+          <button onclick="choosePath('move-on')">Agradecer e seguir sua jornada</button>
+        `;
+            } else if (choice === 'continue') {
+                storyText.innerHTML = "Sua jornada continua com novos desafios à frente. Esta é apenas o começo de sua aventura.";
+                choicesDiv.innerHTML = `
+          <button onclick="restartGame()">Recomeçar a aventura</button>
+        `;
+            } else if (choice === 'explore' || choice === 'rest' || choice === 'move-on') {
+                storyText.innerHTML = "Parabéns! Você completou esta parte da aventura. Fique atento para os próximos capítulos!";
+                choicesDiv.innerHTML = `
+          <button onclick="restartGame()">Recomeçar a aventura</button>
+        `;
+            }
+        }
+
+        function restartGame() {
+            document.getElementById('story-text').innerHTML = "Você está em uma floresta sombria. Há dois caminhos à sua frente. Um parece levar a uma clareira iluminada, e o outro segue em direção a um som de água corrente.";
+            document.querySelector('.choices').innerHTML = `
+        <button onclick="choosePath('clear')">Ir para a clareira</button>
+        <button onclick="choosePath('river')">Seguir o som da água</button>
+      `;
+        }
+    </script>
+</body>
+
+</html>

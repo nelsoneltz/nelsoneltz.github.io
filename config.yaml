@@ -49,11 +49,11 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "https://raw.githubusercontent.com/nelsoneltz/nelsoneltz.github.io/main/images_main/icon.jpg"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: "https://raw.githubusercontent.com/nelsoneltz/nelsoneltz.github.io/main/images_main/icon.png"
+    favicon16x16: "https://raw.githubusercontent.com/nelsoneltz/nelsoneltz.github.io/main/images_main/icon.png"
+    favicon32x32: "https://raw.githubusercontent.com/nelsoneltz/nelsoneltz.github.io/main/images_main/icon.png"
+    apple_touch_icon: "https://raw.githubusercontent.com/nelsoneltz/nelsoneltz.github.io/main/images_main/icon.png"
+    safari_pinned_tab: "https://raw.githubusercontent.com/nelsoneltz/nelsoneltz.github.io/main/images_main/icon.png"
 
   label:
     text: "Home"
